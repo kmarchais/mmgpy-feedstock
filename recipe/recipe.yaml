@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.11.0"
+  version: "0.12.0"
 
 package:
   name: mmgpy
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/kmarchais/mmgpy/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 7e8de7323c61aa90bacea0ba4fca963aeee45baec07ae8fc341cfc9e91d95a97
+  sha256: cab1a172c9598870b702a1b5b0d6abd64f0d4872107f49e5ddd89749577249a5
 
 build:
   number: 0
@@ -44,7 +44,7 @@ requirements:
     - python
     - numpy >=2.0.2
     - meshio >=5.3.5
-    - pyvista >=0.47.0
+    - pyvista >=0.48
     - rich >=13.0.0
     - scipy >=1.11.0,<2
     - mmgsuite
