@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.12.0"
+  version: "0.13.0"
 
 package:
   name: mmgpy
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/kmarchais/mmgpy/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: cab1a172c9598870b702a1b5b0d6abd64f0d4872107f49e5ddd89749577249a5
+  sha256: 0fcd135cbbb41ba70add388c6bc2962a25b8db19727cb541375d866ad1df7a77
 
 build:
   number: 0
@@ -42,14 +42,13 @@ requirements:
     - mmgsuite
   run:
     - python
-    - numpy >=2.0.2
-    - meshio >=5.3.5
-    - pyvista >=0.48
-    - rich >=13.0.0
+    - numpy >=2.0.2,<3
+    - pyvista >=0.48,<1
+    - rich >=13.0.0,<15
     - scipy >=1.11.0,<2
     - mmgsuite
     - if: python < '3.11'
-      then: typing-extensions >=4.0.0
+      then: typing-extensions >=4.0.0,<5
 
 tests:
   - python:
